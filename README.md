@@ -14,7 +14,6 @@ This reference architecture illustrates a trust-by-design artificial intelligenc
 
 ### Key Architectural Components
 
-#### Signals
 
 Captures operational, transactional, telemetry, customer interaction, and risk-related data sources used by enterprise artificial intelligence systems.
 
