@@ -10,38 +10,55 @@ The trust-by-design artificial intelligence architecture and intelligent system 
 
 ### Overview
 
-This reference architecture illustrates a trust-by-design artificial intelligence framework for enterprise-scale intelligent systems operating within regulated and governance-sensitive environments.
+This reference architecture illustrates a trust-by-design artificial intelligence framework for enterprise-scale intelligent systems operating within regulated and governance-sensitive environments. The architecture treats trust, privacy, governance, security, auditability, and accountability as core system design requirements rather than external controls added after deployment.
+
+The framework demonstrates how enterprise data sources, privacy controls, governance mechanisms, knowledge retrieval systems, artificial intelligence models, and operational workflows can be integrated into a structured intelligent system. It is designed to support responsible artificial intelligence adoption in environments where data protection, regulatory alignment, explainability, traceability, and operational reliability are critical.
 
 ### Key Architectural Components
 
+#### Signals and Data Sources
 
-Captures operational, transactional, telemetry, customer interaction, and risk-related data sources used by enterprise artificial intelligence systems.
+Captures operational, transactional, telemetry, customer interaction, application, and risk-related data sources used by enterprise artificial intelligence systems. These inputs may originate from business applications, internal databases, application programming interfaces (APIs), logs, documents, workflow systems, monitoring tools, and enterprise reporting platforms.
+
+This layer provides the initial information foundation for intelligent system processing and ensures that downstream artificial intelligence workflows are connected to relevant, controlled, and organization-approved data sources.
 
 #### Ingestion and Privacy
 
-Implements secure data ingestion, schema governance, encryption controls, tokenization mechanisms, and personally identifiable information (PII) isolation procedures.
+Implements secure data ingestion, schema governance, encryption controls, tokenization mechanisms, data validation, and personally identifiable information (PII) isolation procedures.
+
+This layer ensures that sensitive information is protected before data enters artificial intelligence processing workflows. Privacy-preserving controls reduce exposure of sensitive attributes, support controlled data access, and help maintain compliance with enterprise privacy, security, and governance requirements.
 
 #### Trust Controls
 
-Applies governance orchestration, role-based access controls (RBAC), attribute-based access controls (ABAC), policy enforcement mechanisms, and jurisdiction-aware operational controls.
+Applies governance orchestration, role-based access controls (RBAC), attribute-based access controls (ABAC), policy enforcement mechanisms, jurisdiction-aware operational controls, and approval-based decision routing.
+
+This layer ensures that artificial intelligence requests, data access, knowledge retrieval, and automated actions are evaluated against enterprise policies before execution. Trust controls provide guardrails that limit unauthorized access, reduce uncontrolled model behavior, and support accountable decision-making.
 
 #### Intelligence Layer
 
-Provides Retrieval-Augmented Generation (RAG), controlled knowledge retrieval, explainability mechanisms, model inference services, and safety controls.
+Provides Retrieval-Augmented Generation (RAG), controlled knowledge retrieval, semantic search, explainability mechanisms, model inference services, confidence evaluation, and safety controls.
+
+This layer enables artificial intelligence systems to generate responses and recommendations using approved enterprise knowledge sources rather than relying only on generic model output. Controlled retrieval and explainability mechanisms support transparency, contextual accuracy, and traceable artificial intelligence operations.
 
 #### Enterprise Action
 
-Supports workflow execution, business process management, case management operations, human-in-the-loop review processes, and automated enterprise actions.
+Supports workflow execution, business process management, case management operations, human-in-the-loop review processes, automated notifications, application integration, and enterprise action execution.
+
+This layer connects artificial intelligence outputs to operational systems in a controlled manner. It ensures that recommendations, classifications, alerts, and automated actions are routed through appropriate workflow controls, approvals, and oversight mechanisms before business impact occurs.
 
 ### Foundational Controls
 
 #### Audit and Observability
 
-Supports immutable event logging, end-to-end traceability, data lineage documentation, model lineage tracking, and audit evidence generation.
+Supports immutable event logging, end-to-end traceability, data lineage documentation, model lineage tracking, decision history, system health monitoring, and audit evidence generation.
+
+These controls allow organizations to understand what data was accessed, which policies were applied, what model or retrieval process was used, what output was generated, and what action was taken. Audit and observability capabilities are essential for compliance review, incident investigation, risk monitoring, and operational accountability.
 
 #### Model Lifecycle and Risk Management
 
-Incorporates version control, approval workflows, continuous monitoring, change management procedures, rollback mechanisms, and operational governance controls.
+Incorporates version control, model approval workflows, deployment review, continuous monitoring, performance evaluation, change management procedures, rollback mechanisms, and operational governance controls.
+
+This layer supports responsible management of artificial intelligence systems from design through deployment and post-deployment monitoring. It helps ensure that models, prompts, retrieval sources, policies, and workflows remain aligned with enterprise requirements and can be updated or withdrawn when risk, performance, or compliance conditions change.
 
 ### Design Principles
 
@@ -53,9 +70,16 @@ Incorporates version control, approval workflows, continuous monitoring, change 
 * Privacy-preserving system design
 * Controlled knowledge retrieval
 * Accountable artificial intelligence operations
+* Human-in-the-loop review for high-risk workflows
+* Continuous monitoring and lifecycle governance
+
 <img width="781" height="534" alt="image" src="https://github.com/user-attachments/assets/7182ef18-d7ac-4ea7-a2ff-f124724cba1a" />
 
 ### Technical Architecture
+
+This technical architecture demonstrates a layered enterprise artificial intelligence framework integrating governance, privacy, security, compliance, knowledge retrieval, model inference, workflow execution, auditability, and operational oversight.
+
+The architecture reflects the following technical focus areas:
 
 * Trust-by-design artificial intelligence architecture and intelligent system design principles.
 * Privacy-preserving data pipelines, governance-aware orchestration frameworks, and policy-embedded decision infrastructures.
@@ -63,6 +87,9 @@ Incorporates version control, approval workflows, continuous monitoring, change 
 * Audit-ready model lifecycle management, traceability controls, and architectural accountability mechanisms.
 * Enterprise artificial intelligence architecture integrating governance, security, compliance, and operational oversight controls.
 * System-level design approaches for resilient, accountable, and trustworthy artificial intelligence environments.
+* Enterprise workflow integration supporting controlled, reviewable, and accountable artificial intelligence actions.
+* Operational monitoring and risk management supporting reliable artificial intelligence deployment in regulated environments.
+
 
 ## Enterprise Trustworthy AI – Technical Architecture
 
