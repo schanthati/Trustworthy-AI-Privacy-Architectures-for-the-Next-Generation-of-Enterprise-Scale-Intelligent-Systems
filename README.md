@@ -75,6 +75,49 @@ This layer supports responsible management of artificial intelligence systems fr
 
 <img width="781" height="534" alt="image" src="https://github.com/user-attachments/assets/7182ef18-d7ac-4ea7-a2ff-f124724cba1a" />
 
+### Design Principles
+
+#### Least-Privilege by Default
+
+Access to data, models, knowledge repositories, and operational functions is restricted to the minimum permissions necessary to perform authorized activities. This principle reduces unnecessary exposure of sensitive information and limits the potential impact of unauthorized access or misuse.
+
+#### Policy Enforcement Before Inference
+
+Governance, compliance, security, and operational policies are evaluated before artificial intelligence processing occurs. Requests, data access, and model interactions must satisfy applicable policy requirements before inference services are executed.
+
+#### Explainability by Construction
+
+Explainability capabilities are incorporated directly into system architecture rather than added after deployment. The architecture supports visibility into data sources, retrieval processes, decision pathways, model outputs, and operational actions to facilitate transparency and understanding.
+
+#### End-to-End Auditability
+
+All significant system activities are recorded through traceable audit mechanisms. Data access, retrieval events, model interactions, policy decisions, workflow execution, and operational actions can be tracked throughout the artificial intelligence lifecycle.
+
+#### Governance-Aware Orchestration
+
+Workflow orchestration incorporates governance requirements, approval mechanisms, operational controls, and policy enforcement throughout system execution. Governance considerations are integrated into the architecture rather than treated as separate administrative processes.
+
+#### Privacy-Preserving System Design
+
+Privacy controls are incorporated throughout the architecture using data minimization, encryption, tokenization, masking, access restrictions, and information isolation mechanisms. Sensitive information is protected across data ingestion, processing, storage, retrieval, and operational workflows.
+
+#### Controlled Knowledge Retrieval
+
+Artificial intelligence systems retrieve information only from approved and governed knowledge sources. Retrieval processes utilize access controls, validation mechanisms, source restrictions, and governance policies to maintain information quality, relevance, and accountability.
+
+#### Accountable Artificial Intelligence Operations
+
+System activities, model outputs, recommendations, and operational actions are associated with identifiable governance controls and review processes. Accountability mechanisms support oversight, validation, investigation, and operational responsibility.
+
+#### Human-in-the-Loop Review for High-Risk Workflows
+
+Artificial intelligence systems support human review and approval for decisions involving elevated operational, regulatory, financial, security, or organizational impact. Human oversight mechanisms provide an additional layer of evaluation before critical actions are executed.
+
+#### Continuous Monitoring and Lifecycle Governance
+
+Artificial intelligence systems are continuously monitored throughout development, deployment, operation, and maintenance phases. Performance metrics, operational health indicators, governance controls, risk factors, and compliance requirements are evaluated to support ongoing system reliability and responsible operation.
+
+
 ### Technical Architecture
 
 This technical architecture demonstrates a layered enterprise artificial intelligence framework integrating governance, privacy, security, compliance, knowledge retrieval, model inference, workflow execution, auditability, and operational oversight.
